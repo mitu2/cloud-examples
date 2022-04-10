@@ -1,0 +1,8 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: config
+#          uri: lb://cloud-config-example
+#          predicates:
+#            - Path=/config/**

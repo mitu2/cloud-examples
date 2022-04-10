@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: web
+          uri: lb://cloud-web-example
+          predicates:
+            - Path=/web/**
+          filters:
+            - StripPrefix=1
+        - id: feign
+          uri: lb://cloud-feign-example
+          predicates:
+            - Path=/feign/**
+          filters:
+            - StripPrefix=1

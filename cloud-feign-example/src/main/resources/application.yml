@@ -1,0 +1,20 @@
+spring:
+  config:
+    import: optional:configserver:http://127.0.0.1:8001
+  application:
+    name: cloud-feign-example
+  profiles:
+    active:
+      - default
+      - dev
+  cloud:
+    config:
+      label: cloud-feign-example
+      username: root
+      password: root
+      fail-fast: true
+  devtools:
+    livereload:
+      port: 35730
+server:
+  port: 8002
