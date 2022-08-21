@@ -24,6 +24,19 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>public</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -49,6 +62,7 @@
         <module>cloud-feign-example</module>
         <module>cloud-web-example</module>
         <module>cloud-gateway-example</module>
+        <module>cloud-docker-example</module>
     </modules>
 
 </project>

@@ -1,20 +1,22 @@
 spring:
   config:
-    import: optional:configserver:http://host.docker.internal:8001
+    import: optional:configserver:http://127.0.0.1:8001
   application:
-    name: cloud-feign-example
+    name: cloud-web-example
   profiles:
     active:
       - default
       - dev
   cloud:
     config:
-      label: cloud-feign-example
+      label: cloud-web-example
       username: root
       password: root
       fail-fast: true
   devtools:
     livereload:
-      port: 35730
+      port: 35739
 server:
-  port: 8002
+  port: 8005
+  compression:
+    enabled: true

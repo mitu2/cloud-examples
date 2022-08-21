@@ -10,20 +10,15 @@
         <module name="cloud-web-example" />
         <module name="cloud-config-example" />
         <module name="cloud-gateway-example" />
+        <module name="cloud-docker-example" />
         <module name="cloud-feign-example" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="cloud-config-example" target="11" />
-      <module name="cloud-examples" target="11" />
-      <module name="cloud-feign-example" target="11" />
-      <module name="cloud-gateway-example" target="11" />
-      <module name="cloud-web-example" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud-config-example" options="-parameters" />
+      <module name="cloud-docker-example" options="-parameters" />
       <module name="cloud-feign-example" options="-parameters" />
       <module name="cloud-gateway-example" options="-parameters" />
       <module name="cloud-web-example" options="-parameters" />

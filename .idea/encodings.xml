@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/cloud-config-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-docker-example/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-feign-example/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-feign-example/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-gateway-example/src/main/java" charset="UTF-8" />

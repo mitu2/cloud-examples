@@ -18,3 +18,5 @@ spring:
       port: 35731
 server:
   port: 8003
+  compression:
+    enabled: true
