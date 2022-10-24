@@ -1,6 +1,6 @@
 spring:
   config:
-    import: optional:configserver:http://host.docker.internal:8001
+    import: optional:configserver:http://127.0.0.1:8001
   application:
     name: cloud-feign-example
   profiles:

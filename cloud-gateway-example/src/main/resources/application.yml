@@ -13,6 +13,10 @@ spring:
       username: root
       password: root
       fail-fast: false
+    sentinel:
+      transport:
+        dashboard: localhost:7070
+  #      datasource:
   devtools:
     livereload:
       port: 35732
