@@ -1,0 +1,36 @@
+spring:
+  config:
+    import: optional:configserver:http://127.0.0.1:8001
+  application:
+    name: cloud-kafka-example
+  profiles:
+    active:
+      - default
+      - dev
+  cloud:
+    config:
+      label: cloud-kafka-example
+      username: root
+      password: root
+      fail-fast: false
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+          required-acks: 1
+      bindings:
+        testKafkaConsumer-in-0:
+          destination: test_kafka_topic
+          binder: kafka
+          group: test_kafka_group
+        testKafkaFunction-out-0:
+          destination: test_kafka_topic
+          binder: kafka
+          group: test_kafka_group
+      function:
+        definition: testKafkaConsumer
+  devtools:
+    livereload:
+      port: 35532
+server:
+  port: 8006

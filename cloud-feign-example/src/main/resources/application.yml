@@ -12,7 +12,7 @@ spring:
       label: cloud-feign-example
       username: root
       password: root
-      fail-fast: true
+      fail-fast: false
   devtools:
     livereload:
       port: 35730

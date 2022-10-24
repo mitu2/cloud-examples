@@ -63,6 +63,7 @@
         <module>cloud-web-example</module>
         <module>cloud-gateway-example</module>
         <module>cloud-docker-example</module>
+        <module>cloud-kafka-example</module>
     </modules>
 
 </project>
