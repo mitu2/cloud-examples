@@ -16,7 +16,14 @@ spring:
     sentinel:
       transport:
         dashboard: localhost:7070
-  #      datasource:
+      datasource:
+        main:
+          zk:
+            server-addr: localhost:2181
+            data-id: cloud-gateway
+            group-id: cloud-examples
+            data-type: json
+            rule-type: flow
   devtools:
     livereload:
       port: 35732

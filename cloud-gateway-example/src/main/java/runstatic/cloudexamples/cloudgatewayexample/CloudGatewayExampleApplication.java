@@ -1,5 +1,6 @@
 package runstatic.cloudexamples.cloudgatewayexample;
 
+import org.apache.curator.framework.recipes.cache.NodeCache;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
