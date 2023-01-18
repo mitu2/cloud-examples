@@ -1,0 +1,28 @@
+spring:
+#  config:
+#    import: optional:configserver:http://127.0.0.1:8001
+#  application:
+#    name: cloud-reactive-web-example
+#  profiles:
+#    active:
+#      - default
+#      - dev
+#  cloud:
+#    config:
+#      label: cloud-reactive-web-example
+#      username: root
+#      password: root
+#      fail-fast: false
+  r2dbc:
+    url: r2dbc:mysql://127.0.0.1:3306/examples?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: password
+    pool:
+      enabled: true
+  devtools:
+    livereload:
+      port: 35754
+server:
+  port: 8022
+  compression:
+    enabled: true

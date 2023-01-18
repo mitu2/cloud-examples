@@ -10,11 +10,16 @@
         <module name="cloud-web-example" />
         <module name="cloud-kafka-example" />
         <module name="cloud-config-example" />
-        <module name="cloud-gateway-example" />
         <module name="cloud-docker-example" />
+        <module name="cloud-gateway-example" />
+        <module name="cloud-reactive-web-example" />
+        <module name="cloud-reactive2-web-example" />
         <module name="cloud-feign-example" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-examples" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -23,6 +28,8 @@
       <module name="cloud-feign-example" options="-parameters" />
       <module name="cloud-gateway-example" options="-parameters" />
       <module name="cloud-kafka-example" options="-parameters" />
+      <module name="cloud-reactive-web-example" options="-parameters" />
+      <module name="cloud-reactive2-web-example" options="-parameters" />
       <module name="cloud-web-example" options="-parameters" />
     </option>
   </component>

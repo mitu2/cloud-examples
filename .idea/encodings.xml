@@ -3,10 +3,16 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/cloud-config-example/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-docker-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-docker-example/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-feign-example/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-feign-example/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-gateway-example/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-kafka-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-kafka-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-reactive-web-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-reactive-web-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-reactive2-web-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-reactive2-web-example/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-web-example/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
