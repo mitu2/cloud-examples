@@ -11,6 +11,7 @@
         <module name="cloud-kafka-example" />
         <module name="cloud-config-example" />
         <module name="cloud-docker-example" />
+        <module name="cloud-oauth2-client" />
         <module name="cloud-gateway-example" />
         <module name="cloud-reactive-web-example" />
         <module name="cloud-reactive2-web-example" />
@@ -28,6 +29,7 @@
       <module name="cloud-feign-example" options="-parameters" />
       <module name="cloud-gateway-example" options="-parameters" />
       <module name="cloud-kafka-example" options="-parameters" />
+      <module name="cloud-oauth2-client" options="-parameters" />
       <module name="cloud-reactive-web-example" options="-parameters" />
       <module name="cloud-reactive2-web-example" options="-parameters" />
       <module name="cloud-web-example" options="-parameters" />

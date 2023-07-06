@@ -24,8 +24,12 @@ spring:
       port: 35754
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
 server:
   port: 8022
   compression:
     enabled: true
+
+logging:
+  level:
+    sql: debug

@@ -1,0 +1,25 @@
+
+server:
+  port: 8008
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          gitee:
+            authorization-grant-type: authorization_code
+            client-secret: a29c98da4eda02c2feb25a2c8101fd7e690de107c033dd089f95a81b6c71325e
+            client-id: d2f9e18260752305f57cf4dd144d5984e50119783b4320fcae7ecebfa1f68a69
+            scope:
+              - user_info
+            redirect-uri: "{baseScheme}://{baseHost}{basePort}{basePath}/authorized/{registrationId}"
+        provider:
+          gitee:
+            user-name-attribute: name
+            authorization-uri: https://gitee.com/oauth/authorize
+            token-uri: https://gitee.com/oauth/token
+            user-info-uri: https://gitee.com/api/v5/user
+logging:
+  level:
+    root: info

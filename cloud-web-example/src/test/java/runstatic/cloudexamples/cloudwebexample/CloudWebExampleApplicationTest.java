@@ -18,7 +18,8 @@ class CloudWebExampleApplicationTest {
 
     @Test
     void testMessageMapper() {
-        mapper.queryAllDesc("create_time");
+        
+        mapper.queryAllDesc("nsensitive");
     }
 
 }

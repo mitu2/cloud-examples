@@ -12,18 +12,18 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.1</version>
+        <version>3.1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring-cloud.version>2022.0.0</spring-cloud.version>
-        <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
+        <spring-cloud.version>2022.0.3</spring-cloud.version>
+        <spring-cloud-alibaba.version>2022.0.0.0-RC2</spring-cloud-alibaba.version>
         <java.version>11</java.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <mybatis.spring.version>2.2.2</mybatis.spring.version>
+        <mybatis.spring.version>3.0.2</mybatis.spring.version>
     </properties>
 
     <repositories>
@@ -60,6 +60,12 @@
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis.spring.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>8.0.33</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -72,6 +78,7 @@
         <module>cloud-docker-example</module>
         <module>cloud-kafka-example</module>
         <module>cloud-reactive-web-example</module>
+        <module>cloud-oauth2-client</module>
     </modules>
 
 </project>
