@@ -3,15 +3,13 @@ package runstatic.cloudexamples.cloudkafkaexample;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-
-import java.util.function.Consumer;
 
 /**
  * @author chenmoand
  */
 @Slf4j
 @SpringBootApplication
+// @EnableKafkaStreams
 public class CloudKafkaExampleApplication {
 
 
@@ -19,11 +17,4 @@ public class CloudKafkaExampleApplication {
         SpringApplication.run(CloudKafkaExampleApplication.class, args);
     }
 
-
-    @Bean
-    public Consumer<String> testKafkaConsumer() {
-        return (message) -> {
-            log.info("Kafka Message: {}", message);
-        };
-    }
 }

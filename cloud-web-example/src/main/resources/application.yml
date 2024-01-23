@@ -1,6 +1,6 @@
 spring:
-  config:
-    import: optional:configserver:http://127.0.0.1:8001
+#  config:
+#    import: optional:configserver:http://127.0.0.1:8001
   application:
     name: cloud-web-example
   profiles:

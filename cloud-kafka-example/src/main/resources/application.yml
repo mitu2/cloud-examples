@@ -19,16 +19,18 @@ spring:
           brokers: localhost:9092
           required-acks: 1
       bindings:
-        testKafkaConsumer-in-0:
-          destination: test_kafka_topic
+        exampleKafkaConsumer-in-0:
+          destination: example-kafka-topic
           binder: kafka
-          group: test_kafka_group
-        testKafkaFunction-out-0:
-          destination: test_kafka_topic
+          group: example-kafka-group
+          producer:
+            partition-selector-name: exampleKafkaConsumer
+        exampleKafkaFunction-out-0:
+          destination: example-kafka-topic
           binder: kafka
-          group: test_kafka_group
-      function:
-        definition: testKafkaConsumer
+          group: example-kafka-group
+    function:
+      definition: exampleKafkaConsumer
   devtools:
     livereload:
       port: 35532

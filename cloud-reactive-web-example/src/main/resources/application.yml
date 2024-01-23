@@ -14,7 +14,7 @@ spring:
       password: root
       fail-fast: false
   r2dbc:
-    url: r2dbc:mysql://127.0.0.1:3306/examples?useUnicode=true&characterEncoding=utf-8
+    url: r2dbc:mysql://127.0.0.1:3306/examples?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     username: root
     password: password
     pool:

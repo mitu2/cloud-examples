@@ -10,7 +10,7 @@ import java.util.List;
  * @author chenmoand
  */
 @Mapper
-public interface MessageMapper {
+public interface MessageMapper extends tk.mybatis.mapper.common.Mapper<Message> {
 
     List<Message> queryAllDesc(String fieldName);
 
